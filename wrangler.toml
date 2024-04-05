@@ -3,9 +3,15 @@ compatibility_date = "2024-04-04"
 compatibility_flags = ["nodejs_compat"]
 
 [[d1_databases]]
-binding = "DATABASE"
-database_name = "db"
-database_id = "database-id-from-website"
+binding = "AMPLIFY_DB"
+database_name = "amplifydb"
+database_id = "9ee4c0a9-d109-4a98-b9ca-982d96a0db4a"
+preview_database_id = "AMPLIFY_DB"                   # Required for Pages local development
+
+[[r2_buckets]]
+binding = 'AMPLIFY_BUCKET'             # <~ valid JavaScript variable name
+bucket_name = 'amplify-bucket'
+preview_bucket_name = "AMPLIFY_BUCKET"
 
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.
